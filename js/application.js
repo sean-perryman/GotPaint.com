@@ -1,5 +1,18 @@
 // Application.JS - Main Application JavaScript (Overrides Bootstrap stuff)
 
+//Full page slide show
+$(function() {
+	$('body').vegas({
+		slides: [
+			{ src: '../gallery/Automobiles/auto1_f.jpg' },
+			{ src: '../gallery/Automobiles/auto2_f.jpg' },
+			{ src: '../gallery/Automobiles/auto3_f.jpg' },
+			{ src: '../gallery/Automobiles/auto4_f.jpg' },
+			{ src: '../gallery/Automobiles/auto5_f.jpg' },
+		]
+	});
+});
+
 
 // Begin Navbar Icon Hover
 //About Icon
