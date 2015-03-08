@@ -1,0 +1,38 @@
+div.kkas-logo {
+	margin: 30px auto;
+	background-image: url('../images/kkas_logo.png');
+	background-repeat: no-repeat;
+	height: 566px;
+	width: 430px;
+}
+
+a.spade-icon {
+	background-image: url('../images/spade-icon.png');
+	background-repeat: no-repeat;
+	height: 32px;
+	width: 32px;
+	margin: 10px 75px 0 0;
+}
+
+.about {
+	margin: 10px 0;
+}
+
+.navbar-nav {
+	width: 100%;
+	text-align: center;
+
+}
+
+.navbar-nav > li {
+	float: none;
+	display: inline-block;
+}
+
+.navigation-text {
+	font-size: 2em;
+	color: red;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 20px;
+}
