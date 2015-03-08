@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+	a.spade-icon {
+		background-image: url('');
+	}
+
+	.navbar-text {
+		display: block;
+	}
+
+	.navbar-nav {
+		text-align: left;
+	}
+
+	.kk-addr, .as-addr { float: none; }
+
+	.navbar-nav {
+		clear: both;
+		text-align: center;
+	}
+
+	.navbar-nav > li {
+		clear: both;
+		display: block;
+	}
+
+	.btn-responsive {
+    padding:2px 4px;
+    font-size:80%;
+    line-height: 1;
+    border-radius:3px;
+  }
+}

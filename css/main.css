@@ -1,9 +1,8 @@
 div.kkas-logo {
-	margin: 30px auto;
 	background-image: url('../images/kkas_logo.png');
-	background-repeat: no-repeat;
 	height: 566px;
 	width: 430px;
+	background-repeat: no-repeat;	
 }
 
 a.spade-icon {
@@ -14,19 +13,37 @@ a.spade-icon {
 	margin: 10px 75px 0 0;
 }
 
-.about {
-	margin: 10px 0;
+.navbar-text {
+	display: none;
+}
+
+.about > div:nth-child(1),
+.contact > div:nth-child(1),
+.events > div:nth-child(1),
+.home > div:nth-child(1),
+.gallery > div:nth-child(1),
+.store > div:nth-child(1),
+.links > div:nth-child(1) {
+	position: absolute;
+	color: red;
+	margin-top: -10px;
+	margin-left: 23px;
 }
 
 .navbar-nav {
 	width: 100%;
 	text-align: center;
-
 }
 
 .navbar-nav > li {
 	float: none;
 	display: inline-block;
+}
+
+.btn-responsive {
+  padding:4px 9px;
+  font-size:90%;
+  line-height: 1.2;
 }
 
 .navigation-text {
@@ -36,3 +53,40 @@ a.spade-icon {
 	font-weight: bold;
 	padding-top: 20px;
 }
+
+.content {
+	display: none;
+	margin: auto;
+	text-align: center;
+	background-color: rgba( 255, 255, 255, .5 );
+	border: 1px solid black;
+	-moz-border-radius: 45px;
+	-webkit-border-radius: 45px;
+	border-radius: 45px; /* future proofing */
+	-khtml-border-radius: 45px; /* for old Konqueror browsers */
+}
+
+.about,
+.contact,
+.gallery,
+.events,
+.store,
+.links { 
+	display: none; 
+	padding: 25px;
+}
+
+.main {
+	margin: 30px auto;
+	background-color: rgba( 255, 255, 255, .65 );
+	border: 1px solid black;
+	-moz-border-radius: 45px;
+	-webkit-border-radius: 45px;
+	border-radius: 45px; /* future proofing */
+	-khtml-border-radius: 45px; /* for old Konqueror browsers */
+}
+
+.main { width: 75%; }
+.main.contact { overflow: auto; }
+.kk-addr { float: left; margin: 30px; }
+.as-addr { float: right; margin: 30px; }

@@ -4,77 +4,60 @@
 $(function() {
 	$('body').vegas({
 		slides: [
-			{ src: '../gallery/Automobiles/auto1_f.jpg' },
-			{ src: '../gallery/Automobiles/auto2_f.jpg' },
-			{ src: '../gallery/Automobiles/auto3_f.jpg' },
-			{ src: '../gallery/Automobiles/auto4_f.jpg' },
-			{ src: '../gallery/Automobiles/auto5_f.jpg' },
+			{ src: 'gallery/Automobiles/auto1_f.jpg' },
+			{ src: 'gallery/Automobiles/auto2_f.jpg' },
+			{ src: 'gallery/Automobiles/auto3_f.jpg' },
+			{ src: 'gallery/Automobiles/auto4_f.jpg' },
+			{ src: 'gallery/Automobiles/auto5_f.jpg' },
 		]
 	});
 });
 
 
-// Begin Navbar Icon Hover
-//About Icon
-$('.about-us').mouseenter( function() { 
-	$('.navigation-text').text("About Us"); 
-});
 
-$('.about-us').mouseout( function() {	
-	$('.navigation-text').text("");	
-});
+if (matchMedia) {
+	var mq = window.matchMedia("(min-width: 769px)");
+	mq.addListener(WidthChange);
+	WidthChange(mq);
+}
 
-//Contact Icon
-$('.contact').mouseenter( function() { 
-	$('.navigation-text').text("Contact"); 
-});
+var collapsed;
 
-$('.contact').mouseout( function() {	
-	$('.navigation-text').text("");	
-});
+function WidthChange( mq ) {
+	if (mq.matches) { //Navbar not collapsed
+		console.log( "Navbar expanded" );
+		collapsed = false;
+		$('.about').mouseenter( function() { if (collapsed) return; $('.about > div:nth-child(1)').show(); }).mouseout( function() { if (collapsed) return; $('.about > div:nth-child(1)').hide(); });
+		$('.contact').mouseenter( function() { if (collapsed) return; $('.contact > div:nth-child(1)').show(); }).mouseout( function() { if (collapsed) return; $('.contact > div:nth-child(1)').hide(); });
+		$('.events').mouseenter( function() { if (collapsed) return; $('.events > div:nth-child(1)').show(); }).mouseout( function() {	if (collapsed) return; $('.events > div:nth-child(1)').hide(); });
+		$('.home').mouseenter( function() { if (collapsed) return; $('.home > div:nth-child(1)').show(); }).mouseout( function() {	if (collapsed) return; $('.home > div:nth-child(1)').hide(); });
+		$('.gallery').mouseenter( function() { if (collapsed) return; $('.gallery > div:nth-child(1)').show(); }).mouseout( function() { if (collapsed) return; $('.gallery > div:nth-child(1)').hide(); });
+		$('.store').mouseenter( function() { if (collapsed) return; $('.store > div:nth-child(1)').show(); }).mouseout( function() { if (collapsed) return; $('.store > div:nth-child(1)').hide(); });
+		$('.links').mouseenter( function() { if (collapsed) return; $('.links > div:nth-child(1)').show(); }).mouseout( function() { if (collapsed) return; $('.links > div:nth-child(1)').hide(); });
+	} else { //Navbar collapsed
+		console.log( "Navbar collapsed" );
+		collapsed = true;
+		$('.spade-icon').each( function() {
+			$(this).children('navbar-text').show();
+		});
+	}
+}
 
-//Events Icon
-$('.events').mouseenter( function() { 
-	$('.navigation-text').text("Events"); 
-});
+//Begin Content Placement
+$('.spade-icon').on( 'click', function(e) {
+	e.preventDefault();
 
-$('.events').mouseout( function() {	
-	$('.navigation-text').text("");	
+	if ($(this).hasClass('about')) { screenTransition('.about'); }
+	if ($(this).hasClass('contact')) { screenTransition('.contact') };
+	if ($(this).hasClass('events')) { screenTransition('.events'); }
+	if ($(this).hasClass('home')) { screenTransition('.home'); }
+	if ($(this).hasClass('gallery')) { screenTransition('.gallery'); }
+	if ($(this).hasClass('store')) { screenTransition('.store'); }
+	if ($(this).hasClass('links')) { screenTransition('.links'); }
 });
+//
 
-//Home Icon
-$('.home').mouseenter( function() { 
-	$('.navigation-text').text("Home"); 
-});
-
-$('.home').mouseout( function() {	
-	$('.navigation-text').text("");	
-});
-
-//Gallery Icon
-$('.gallery').mouseenter( function() { 
-	$('.navigation-text').text("Gallery"); 
-});
-
-$('.gallery').mouseout( function() {	
-	$('.navigation-text').text("");	
-});
-
-//Store Icon
-$('.store').mouseenter( function() { 
-	$('.navigation-text').text("Store"); 
-});
-
-$('.store').mouseout( function() {	
-	$('.navigation-text').text("");	
-});
-
-//Links Icon
-$('.links').mouseenter( function() { 
-	$('.navigation-text').text("Links"); 
-});
-
-$('.links').mouseout( function() {	
-	$('.navigation-text').text("");	
-});
-//End Navbar Icon Hover
+function screenTransition(newScreen) {
+	$('.main').hide();
+	$(newScreen).fadeIn();
+}
