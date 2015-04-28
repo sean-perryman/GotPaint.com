@@ -26,19 +26,26 @@ var collapsed;
 function WidthChange( mq ) {
 	if (mq.matches) { //Navbar not collapsed
 		console.log( "Navbar expanded" );
+		
+		//Reset spade-icon text
 		collapsed = false;
-		$('.about').mouseenter( function() { if (collapsed) return; $('.about > div:nth-child(1)').show(); }).mouseout( function() { if (collapsed) return; $('.about > div:nth-child(1)').hide(); });
-		$('.contact').mouseenter( function() { if (collapsed) return; $('.contact > div:nth-child(1)').show(); }).mouseout( function() { if (collapsed) return; $('.contact > div:nth-child(1)').hide(); });
-		$('.events').mouseenter( function() { if (collapsed) return; $('.events > div:nth-child(1)').show(); }).mouseout( function() {	if (collapsed) return; $('.events > div:nth-child(1)').hide(); });
-		$('.home').mouseenter( function() { if (collapsed) return; $('.home > div:nth-child(1)').show(); }).mouseout( function() {	if (collapsed) return; $('.home > div:nth-child(1)').hide(); });
-		$('.gallery').mouseenter( function() { if (collapsed) return; $('.gallery > div:nth-child(1)').show(); }).mouseout( function() { if (collapsed) return; $('.gallery > div:nth-child(1)').hide(); });
-		$('.store').mouseenter( function() { if (collapsed) return; $('.store > div:nth-child(1)').show(); }).mouseout( function() { if (collapsed) return; $('.store > div:nth-child(1)').hide(); });
-		$('.links').mouseenter( function() { if (collapsed) return; $('.links > div:nth-child(1)').show(); }).mouseout( function() { if (collapsed) return; $('.links > div:nth-child(1)').hide(); });
+		$('.spade-icon').each( function() {
+			$(this).css( "color", "rgba(100,100,100,0)");
+		});
+
+		$('#nav-about-link').mouseenter( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,1)");	}).mouseout( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,0)"); });
+		$('#nav-contact-link').mouseenter( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,1)");	}).mouseout( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,0)"); });
+		$('#nav-events-link').mouseenter( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,1)");	}).mouseout( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,0)"); });
+		$('#nav-home-link').mouseenter( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,1)");	}).mouseout( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,0)"); });
+		$('#nav-gallery-link').mouseenter( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,1)");	}).mouseout( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,0)"); });
+		$('#nav-store-link').mouseenter( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,1)");	}).mouseout( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,0)"); });
+		$('#nav-links-link').mouseenter( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,1)");	}).mouseout( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,0)"); });		
+
 	} else { //Navbar collapsed
 		console.log( "Navbar collapsed" );
 		collapsed = true;
 		$('.spade-icon').each( function() {
-			$(this).children('navbar-text').show();
+			$(this).css( "color", "rgba(100,100,100,1)");
 		});
 	}
 }
@@ -61,3 +68,5 @@ function screenTransition(newScreen) {
 	$('.main').hide();
 	$(newScreen).fadeIn();
 }
+
+

@@ -1,11 +1,8 @@
 /* line 1, ../sass/main.sass */
-div.kkas-logo {
-  background-image: url("../images/kkas_logo.png");
-  height: 566px;
-  width: 430px;
-  background-repeat: no-repeat; }
+img.kkas-logo {
+  max-width: 90%; }
 
-/* line 7, ../sass/main.sass */
+/* line 4, ../sass/main.sass */
 a.spade-icon {
   background-image: url("../images/spade-icon.png");
   background-repeat: no-repeat;
@@ -13,33 +10,29 @@ a.spade-icon {
   width: 32px;
   margin: 10px 75px 0 0; }
 
-/* line 14, ../sass/main.sass */
-.navbar-text {
-  display: none; }
-
-/* line 17, ../sass/main.sass */
+/* line 11, ../sass/main.sass */
 .about > div:nth-child(1), .contact > div:nth-child(1), .events > div:nth-child(1), .home > div:nth-child(1), .gallery > div:nth-child(1), .store > div:nth-child(1), .links > div:nth-child(1) {
   position: absolute;
   color: red;
   margin-top: -10px;
   margin-left: 23px; }
 
-/* line 23, ../sass/main.sass */
+/* line 17, ../sass/main.sass */
 .navbar-nav {
   width: 100%;
   text-align: center; }
-  /* line 26, ../sass/main.sass */
+  /* line 20, ../sass/main.sass */
   .navbar-nav > li {
     float: none;
     display: inline-block; }
 
-/* line 30, ../sass/main.sass */
+/* line 24, ../sass/main.sass */
 .btn-responsive {
   padding: 4px 9px;
   font-size: 90%;
   line-height: 1.2; }
 
-/* line 35, ../sass/main.sass */
+/* line 29, ../sass/main.sass */
 .navigation-text {
   font-size: 2em;
   color: red;
@@ -47,7 +40,7 @@ a.spade-icon {
   font-weight: bold;
   padding-top: 20px; }
 
-/* line 42, ../sass/main.sass */
+/* line 36, ../sass/main.sass */
 .content {
   display: none;
   margin: auto;
@@ -61,12 +54,12 @@ a.spade-icon {
   -khtml-border-radius: 45px;
   /* for old Konqueror browsers */ }
 
-/* line 55, ../sass/main.sass */
+/* line 49, ../sass/main.sass */
 .about, .contact, .gallery, .events, .store, .links {
   display: none;
   padding: 25px; }
 
-/* line 59, ../sass/main.sass */
+/* line 53, ../sass/main.sass */
 .main {
   margin: 30px auto;
   background-color: rgba(255, 255, 255, 0.65);
@@ -78,32 +71,56 @@ a.spade-icon {
   -khtml-border-radius: 45px;
   /* for old Konqueror browsers */
   width: 75%; }
-  /* line 70, ../sass/main.sass */
+  /* line 64, ../sass/main.sass */
   .main.contact {
     overflow: auto; }
 
-/* line 73, ../sass/main.sass */
+/* line 67, ../sass/main.sass */
 .kk-addr {
   float: left;
   margin: 30px; }
 
-/* line 77, ../sass/main.sass */
+/* line 71, ../sass/main.sass */
 .as-addr {
   float: right;
   margin: 30px; }
 
-/* line 81, ../sass/main.sass */
-.main.kkas-logo {
+/* line 75, ../sass/main.sass */
+.main.home {
   background-color: rgba(0, 0, 0, 0);
   border: none; }
 
 /* Box around the link images on the links page */
-/* line 87, ../sass/main.sass */
+/* line 81, ../sass/main.sass */
 .link-box {
   display: inline-block;
   width: 320px;
   height: 240px; }
 
-/* line 92, ../sass/main.sass */
+/* line 86, ../sass/main.sass */
 .link-img {
   max-width: 320px; }
+
+/* About page images */
+/* line 90, ../sass/main.sass */
+img.about-img {
+  max-width: 80%; }
+
+/* line 93, ../sass/main.sass */
+#nav-about-link,
+#nav-contact-link,
+#nav-events-link,
+#nav-home-link,
+#nav-gallery-link,
+#nav-store-link,
+#nav-links-link {
+  color: rgba(100, 100, 100, 0); }
+  /* line 102, ../sass/main.sass */
+  #nav-about-link span,
+  #nav-contact-link span,
+  #nav-events-link span,
+  #nav-home-link span,
+  #nav-gallery-link span,
+  #nav-store-link span,
+  #nav-links-link span {
+    margin-left: 20px; }
