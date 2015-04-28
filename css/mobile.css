@@ -29,4 +29,8 @@
     line-height: 1;
     border-radius:3px;
   }
+
+  .container {
+  	width: 90%;
+  }
 }

@@ -1,92 +1,109 @@
+/* line 1, ../sass/main.sass */
 div.kkas-logo {
-	background-image: url('../images/kkas_logo.png');
-	height: 566px;
-	width: 430px;
-	background-repeat: no-repeat;	
-}
+  background-image: url("../images/kkas_logo.png");
+  height: 566px;
+  width: 430px;
+  background-repeat: no-repeat; }
 
+/* line 7, ../sass/main.sass */
 a.spade-icon {
-	background-image: url('../images/spade-icon.png');
-	background-repeat: no-repeat;
-	height: 32px;
-	width: 32px;
-	margin: 10px 75px 0 0;
-}
+  background-image: url("../images/spade-icon.png");
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 32px;
+  margin: 10px 75px 0 0; }
 
+/* line 14, ../sass/main.sass */
 .navbar-text {
-	display: none;
-}
+  display: none; }
 
-.about > div:nth-child(1),
-.contact > div:nth-child(1),
-.events > div:nth-child(1),
-.home > div:nth-child(1),
-.gallery > div:nth-child(1),
-.store > div:nth-child(1),
-.links > div:nth-child(1) {
-	position: absolute;
-	color: red;
-	margin-top: -10px;
-	margin-left: 23px;
-}
+/* line 17, ../sass/main.sass */
+.about > div:nth-child(1), .contact > div:nth-child(1), .events > div:nth-child(1), .home > div:nth-child(1), .gallery > div:nth-child(1), .store > div:nth-child(1), .links > div:nth-child(1) {
+  position: absolute;
+  color: red;
+  margin-top: -10px;
+  margin-left: 23px; }
 
+/* line 23, ../sass/main.sass */
 .navbar-nav {
-	width: 100%;
-	text-align: center;
-}
+  width: 100%;
+  text-align: center; }
+  /* line 26, ../sass/main.sass */
+  .navbar-nav > li {
+    float: none;
+    display: inline-block; }
 
-.navbar-nav > li {
-	float: none;
-	display: inline-block;
-}
-
+/* line 30, ../sass/main.sass */
 .btn-responsive {
-  padding:4px 9px;
-  font-size:90%;
-  line-height: 1.2;
-}
+  padding: 4px 9px;
+  font-size: 90%;
+  line-height: 1.2; }
 
+/* line 35, ../sass/main.sass */
 .navigation-text {
-	font-size: 2em;
-	color: red;
-	text-align: center;
-	font-weight: bold;
-	padding-top: 20px;
-}
+  font-size: 2em;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px; }
 
+/* line 42, ../sass/main.sass */
 .content {
-	display: none;
-	margin: auto;
-	text-align: center;
-	background-color: rgba( 255, 255, 255, .5 );
-	border: 1px solid black;
-	-moz-border-radius: 45px;
-	-webkit-border-radius: 45px;
-	border-radius: 45px; /* future proofing */
-	-khtml-border-radius: 45px; /* for old Konqueror browsers */
-}
+  display: none;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
+  -moz-border-radius: 45px;
+  -webkit-border-radius: 45px;
+  border-radius: 45px;
+  /* future proofing */
+  -khtml-border-radius: 45px;
+  /* for old Konqueror browsers */ }
 
-.about,
-.contact,
-.gallery,
-.events,
-.store,
-.links { 
-	display: none; 
-	padding: 25px;
-}
+/* line 55, ../sass/main.sass */
+.about, .contact, .gallery, .events, .store, .links {
+  display: none;
+  padding: 25px; }
 
+/* line 59, ../sass/main.sass */
 .main {
-	margin: 30px auto;
-	background-color: rgba( 255, 255, 255, .65 );
-	border: 1px solid black;
-	-moz-border-radius: 45px;
-	-webkit-border-radius: 45px;
-	border-radius: 45px; /* future proofing */
-	-khtml-border-radius: 45px; /* for old Konqueror browsers */
-}
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.65);
+  border: 1px solid black;
+  -moz-border-radius: 45px;
+  -webkit-border-radius: 45px;
+  border-radius: 45px;
+  /* future proofing */
+  -khtml-border-radius: 45px;
+  /* for old Konqueror browsers */
+  width: 75%; }
+  /* line 70, ../sass/main.sass */
+  .main.contact {
+    overflow: auto; }
 
-.main { width: 75%; }
-.main.contact { overflow: auto; }
-.kk-addr { float: left; margin: 30px; }
-.as-addr { float: right; margin: 30px; }
+/* line 73, ../sass/main.sass */
+.kk-addr {
+  float: left;
+  margin: 30px; }
+
+/* line 77, ../sass/main.sass */
+.as-addr {
+  float: right;
+  margin: 30px; }
+
+/* line 81, ../sass/main.sass */
+.main.kkas-logo {
+  background-color: rgba(0, 0, 0, 0);
+  border: none; }
+
+/* Box around the link images on the links page */
+/* line 87, ../sass/main.sass */
+.link-box {
+  display: inline-block;
+  width: 320px;
+  height: 240px; }
+
+/* line 92, ../sass/main.sass */
+.link-img {
+  max-width: 320px; }
