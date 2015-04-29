@@ -3,15 +3,38 @@
 	<head>
 		<title>Kal Koncepts/Air Syndicate</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<meta charset="utf-8">
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- Full screen rotating background --> 
 		<link rel="stylesheet" href="css/vegas.min.css">
+
+		<!-- Main styles: navbar mostly-->
 		<link rel="stylesheet" href="css/main.css">
+
+		<!-- Individual "pages" -->
+		<link rel="stylesheet" href="css/about.css">
+		<link rel="stylesheet" href="css/contacts.css">
+		<link rel="stylesheet" href="css/events.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" href="css/links.css">
+		<link rel="stylesheet" href="css/store.css">
+
+		<!-- Mobile site styling-->
 		<link rel="stylesheet" href="css/mobile.css">
+
+		<!-- FolioGallery Stuff -->
+		<link type="text/css" rel="stylesheet" href="foliogallery/foliogallery.css" />
+		<link type="text/css" rel="stylesheet" href="colorbox/colorbox.css" />
 		</head>
 	<body>
 		<div class="container">
+			
+			<!-- Home page -->
 			<div class="main home"><img class="center-block kkas-logo" src="images/kkas_logo.png"></div>
+
 			<!-- About Page -->
 			<div class="main about">
 				<h1>About Kal Koncepts and Air Syndicate</h1>
@@ -24,9 +47,7 @@
 				<img class="about-img center-block" src="images/about/lambie.jpg">
 				<p>The newest member to the Kal Koncepts Krew is Brandon Lambie. The owner, and operator of Black Sheep Kustoms, Lambie brings his fabricating, and bodywork skills to the table. A veteran car/truck kustomizer, Lambie was also the fabricator reposible for a number of kustom vehicles debuting at SEMA. (Notably the radical bodywork seen on the Tiburon's in the past Hundai booths). No longer behind the scenes, Lambie has recieved a number of magazine credits in the past year with KKAS, including the dual SEMA cover for SEMA 2006 with the House of Kolor Cobalt, and AutoAir Fusion. Lambie is also the current president of Subversive car club. (Keeping in in-house minitrucker keeps the industry in perspective for us) Keep an eye out for more innovative kustoms with his trademark skills.</p>
 				<p>With previous clients such as Dodge/Viper, General Motors, Ford, Colorado Custom Wheels, Trenz, House of Kolor, Arlen Ness, and West Coast Choppers: Kal Koncepts will continue to be a driving innovative force in the kustom paint industry for quite a while. Don't be fooled by the Kopycat Kustomizers in the industry. For the Kal Koncepts "Look" you need to come to the source.</p>
- 
 				<p>We hope you enjoy the site and look forward to working with you, and making your kustom dreams come true.</p>
-
 			</div>
 
 			<!-- Contacts Page -->
@@ -50,11 +71,22 @@
 				</address>
 
 			</div>
+
+			<!-- Events Page -->
 			<div class="main events"><h1>Events</h1></div>
-			<div class="main gallery"><h1>Gallery</h1></div>
-			<div class="main store"><h1>Store</h1></div>
+
+			<!-- Gallery -->
+			<div class="main gallery"><h1>Gallery</h1>
+				<div class="folioGallery" id="folioGallery"></div>
+			</div>
+
+			<!-- Store -->
+			<div class="main store"><h1>Store</h1>
+				<br />
+				<p>Nothing here yet! Check out <a href="http://craigfraserstudios.com">Fraser's Fine Art site</a> if you have money burning a hole in your pocket!</p>
+			</div>
 			
-			<!-- Links Page-->
+			<!-- Links Page -->
 			<div class="main links"><h1>Links</h1>
 				<div class="link-box"><a href="#"><img class="link-img center-block" alt="Artool" src="images/links/artool.gif"></a></div>
 				<div class="link-box"><a href="#"><img class="link-img center-block" alt="Coast Airbrush" src="images/links/coastair.jpg"></a></div>
@@ -72,6 +104,7 @@
 				<a href="#"><img alt="" src="images/links/"></a>
 				<a href="#"><img alt="" src="images/links/"></a>
 			</div>
+			<footer class="text-center">Copyright <?php echo date("Y"); ?> - Kal Koncepts/Air Syndicate - All rights reserved</footer>
 		</div>
 
 		<!-- Bottom Navbar -->
@@ -102,6 +135,12 @@
 		<script src="js/jquery-2.1.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/vegas.min.js"></script>
+
+		<!-- FolioGallery -->
+		<script type="text/javascript" src="foliogallery/foliogallery.js"></script>
+		<script type="text/javascript" src="colorbox/jquery.colorbox-min.js"></script>
+
+		<!-- Application wide JS -->
 		<script src="js/application.js"></script>
 	</body>
 </html>

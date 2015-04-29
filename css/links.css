@@ -1,0 +1,10 @@
+/* Box around the link images on the links page */
+/* line 3, ../sass/links.sass */
+.link-box {
+  display: inline-block;
+  width: 320px;
+  height: 240px; }
+
+/* line 8, ../sass/links.sass */
+.link-img {
+  max-width: 320px; }

@@ -25,7 +25,6 @@ var collapsed;
 
 function WidthChange( mq ) {
 	if (mq.matches) { //Navbar not collapsed
-		console.log( "Navbar expanded" );
 		
 		//Reset spade-icon text
 		collapsed = false;
@@ -42,7 +41,6 @@ function WidthChange( mq ) {
 		$('#nav-links-link').mouseenter( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,1)");	}).mouseout( function() { if (collapsed) return; $(this).css( "color", "rgba(100,100,100,0)"); });		
 
 	} else { //Navbar collapsed
-		console.log( "Navbar collapsed" );
 		collapsed = true;
 		$('.spade-icon').each( function() {
 			$(this).css( "color", "rgba(100,100,100,1)");
